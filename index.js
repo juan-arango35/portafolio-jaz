@@ -65,6 +65,8 @@ const curriculum = document.querySelector(".curriculum");
 const portafolio = document.querySelector(".portfolio");
 const contacto=document.querySelector(".contacto");
 const footer=document.querySelector(".footer");
+const contenidoBanner=document.querySelector(".vapour");
+const titulos = document.querySelectorAll(".titulo-seccion");
 
 togleThemeButtons.addEventListener("click", ()=>{
 seccion.classList.toggle("dark-mode")
@@ -73,6 +75,8 @@ skill.classList.toggle("dark-mode")
 curriculum.classList.toggle("dark-mode")
 portafolio.classList.toggle("dark-mode")
 contacto.classList.toggle("dark-mode")
-footer.classList.toggle("dark-mode")    
+footer.classList.toggle("dark-mode")  
+contenidoBanner.classList.toggle("dark-mode")  
+titulos.classList.toggle("dark-mode")
 })
 

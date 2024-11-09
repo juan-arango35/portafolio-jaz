@@ -10,17 +10,19 @@ html {
   scroll-behavior: smooth;
 }
 
-/* para camibio de tema.ligth */
+/* dark mode colores son */
+
+/* para camibio de tema.ligth de fondo: #d4e6f1  y texto  fondo 2: #eaf2f8  */
 .contenedor-header.dark-mode {
-  background-color: white;
+  background-color: #d4e6f1;
   color: #060505;
   header nav ul li a {
-    color: black;
+    color:#1f618d ;
     font-weight: bold;
     transition: transform 1.8s ease;
     &:hover {
       transform: scale(1.5);
-      color: #1cb698;
+      color: #154360;
       border-bottom: 2px solid black;
     }
   }
@@ -29,8 +31,8 @@ html {
   }
 }
 .sobremi.dark-mode {
-  background: white;
-  color: black;
+  background:  #eaf2f8 ;
+  color:#1f618d;
   button {
     color: black;
     border: solid 2px black;
@@ -38,21 +40,21 @@ html {
 }
 
 .sobremi.dark-mode #intereslista {
-  background: rgb(247, 247, 247);
-  color: #060505;
+  background:  #d4e6f1;
+  color: #271c1c;
   &:hover {
-    background: #1cb698;
+    background: #a9cce3;
   }
 }
 
 .skills.dark-mode {
-  background-color: rgb(247, 247, 247);
-  color: #060505;
+  background-color: #d4e6f1;
+  color:#1f618d;
 }
 
 .curriculum.dark-mode {
-  background-color: white;
-  color: #060505;
+  background-color: #eaf2f8 ;
+  color:#1f618d;
 }
 .curriculum.dark-mode {
   .item.izq,
@@ -62,13 +64,13 @@ html {
 }
 
 .portfolio.dark-mode {
-  background-color: rgb(247, 247, 247);
-  color: #060505;
+  background-color: #d4e6f0;
+  color:#1f618d;
 }
 
 .contacto.dark-mode {
-  background-color: white;
-  color: #060505;
+  background-color: #eaf2f8 ;
+  color: #1f618d;
 
   .col input {
     background: rgb(247, 247, 247);
@@ -79,12 +81,12 @@ html {
     color: #060505;
   }
   .col button {
-    color: black;
+    color:#1f618d;
     border: solid 2px black;
   }
 }
 .footer.dark-mode {
-  background-color: rgb(247, 247, 247);
+  background-color: #d4e6f0;
   color: #060505;
 }
 
@@ -92,6 +94,13 @@ html {
   color: black;
   border: solid 2px black;
 }
+
+
+.vapour.dark-mode {
+  background-color: white;
+  color:black;
+}
+
 
 /* -------------------------- */
 /* MENU */
@@ -159,14 +168,14 @@ html {
 .inicio .contenido-banner {
   padding: 20px;
   background-color: #1e2326;
-  max-width: 350px;
+  max-width: 340px;
   margin: auto;
   text-align: center;
   border-radius: 40px;
 }
 .inicio .contenido-banner img {
   margin-top: 40px;
-  border: 10px solid #1cb698;
+  border: 10px solid   #6f95ae;
   display: block;
   width: 80%;
   margin: auto;
@@ -253,7 +262,7 @@ html {
   width: 130px;
 }
 .sobremi .fila .col ul li span {
-  background-color: #1cb698;
+  background-color: #8fc3b8;
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
@@ -300,7 +309,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #1cb698;
+  background-color:  #6f95ae;
   z-index: -1;
   transition: 1s;
 }
@@ -348,7 +357,7 @@ html {
   margin-bottom: 30px;
 }
 .skills .skill .progreso {
-  background-color: #1cb698;
+  background-color:  #6992ae;
   position: absolute;
   top: 0;
   left: 0;
@@ -358,7 +367,7 @@ html {
   position: absolute;
   height: 40px;
   width: 40px;
-  background-color: #1cb698;
+  background-color:#6992ae;
   border-radius: 50px;
   line-height: 40px;
   text-align: center;
@@ -542,30 +551,30 @@ html {
   margin-bottom: 10px;
 }
 .curriculum .fila .item .casa {
-  color: #1cb698;
+  color:   #6f95ae;
   font-size: 22px;
   font-weight: bold;
   display: block;
 }
 .curriculum .fila .item .fecha {
   display: block;
-  color: #1cb698;
+  color:   #81a4bc;
   margin-bottom: 10px;
 }
 .curriculum .fila .item p {
   line-height: 24px;
 }
 .curriculum .fila .izq {
-  border-right: 2px solid #1cb698;
+  border-right: 2px solid   #6f95ae;
   margin-right: 20px;
 }
 .curriculum .fila .der {
-  border-left: 2px solid #1cb698;
+  border-left: 2px solid   #6f95ae;
   margin-left: 20px;
 }
 .curriculum .fila .item .conectori {
   height: 2px;
-  background-color: #1cb698;
+  background-color:  #6f95ae;
   width: 47px;
   position: absolute;
   top: 50%;
@@ -577,14 +586,14 @@ html {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #1cb698;
+  background-color:  #6f95ae;
   float: right;
   position: relative;
   bottom: 4px;
 }
 .curriculum .fila .item .conectord {
   height: 2px;
-  background-color: #1cb698;
+  background-color:   #6f95ae;
   width: 47px;
   position: absolute;
   top: 50%;
@@ -596,7 +605,7 @@ html {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #1cb698;
+  background-color:   #6f95ae;
   float: left;
   position: relative;
   bottom: 4px;
@@ -713,7 +722,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #1cb698;
+  background-color:   #6f95ae;
   z-index: -1;
   transition: 1s;
 }
@@ -768,13 +777,13 @@ footer .redes a {
   transition: 0.3s;
 }
 footer .redes a:hover {
-  background-color: #1cb698;
+  background-color:   #6f95ae;
 }
 footer .arriba {
   display: block;
   width: 50px;
   height: 50px;
-  background-color: #1cb698;
+  background-color: #1f618d;
   color: #fff;
   position: absolute;
   left: 50%;
@@ -859,6 +868,7 @@ footer .arriba {
 }
 
 /* animacion para la lluvia */
+
 
 .containerluvia .gota {
   position: absolute;
