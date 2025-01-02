@@ -15,6 +15,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -90,10 +97,10 @@
           <div class="col">
             <h3 class="titulo-seccion">Datos Personales</h3>
             <ul>
-              <li>
+              <!--  <li>
                 <strong style="color: #1f618d">Cumpleaños</strong>
                 06-11-1983
-              </li>
+              </li> -->
               <li>
                 <strong style="color: #1f618d">Teléfono</strong>
                 +51-907297272
@@ -106,10 +113,10 @@
                 <strong style="color: #1f618d">Git hub</strong>
                 juan-arango35
               </li>
-              <li>
+              <!-- <li>
                 <strong style="color: #1f618d">Dirección</strong>
                 15 Independencia, Perú
-              </li>
+              </li> -->
               <li>
                 <strong style="color: #1f618d">Cargo</strong>
                 <span>Front-end</span>
@@ -348,41 +355,52 @@
         <div class="fila">
           <!-- Formulario -->
           <div class="col">
-            <input type="text" placeholder="Tú Nombre" />
-            <input type="text" placeholder="Número telefónico" />
-            <input type="text" placeholder="Dirección de correo" />
-            <input type="text" placeholder="Tema" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Mensaje"
-            ></textarea>
-            <button>
-              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-              <span class="overlay"></span>
-            </button>
+            <form id="contactForm">
+              <input
+                type="text"
+                placeholder="Tú Nombre"
+                id="name"
+                required
+                name="name"
+              />
+              <input
+                type="text"
+                placeholder="Dirección de correo"
+                id="email"
+                name="email"
+              />
+              <input type="text" placeholder="Tema" id="tema" name="tema" />
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+              <button type="submit">
+                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
           </div>
           <!-- Mapa -->
           <div class="col">
-            <img src="img/ubicacion2.png" alt="" />
-            <div class="info">
-              <ul>
-                <li>
-                  <i class="fa-solid fa-location-dot"></i>
-                  Perú- Lima
-                </li>
-                <li>
-                  <i class="fa-solid fa-mobile-screen"></i>
-                  Llamanos: +51-907297272
-                </li>
-                <li>
-                  <i class="fa-solid fa-envelope"></i>
-                  Email: <br /><br />
-                  juanarangozapata35@gmail.com
-                </li>
-              </ul>
+            <!-- <img src="img/ubicacion2.png" alt="" /> -->
+            <div class="iconos-container">
+              <i class="devicon-react-original colored iconos-tech"></i>
+
+              <i class="devicon-javascript-plain iconos-tech"></i>
+              <i class="devicon-css3-plain colored iconos-tech"></i>
+              <i class="devicon-typescript-plain colored iconos-tech"></i>
+              <i class="devicon-linux-plain colored iconos-tech"></i>
+              <i class="devicon-prisma-original iconos-tech"></i>
+              <i class="devicon-postgresql-plain iconos-tech"></i>
+              <i class="devicon-nextjs-plain iconos-tech"></i>
+              <i class="devicon-tailwindcss-original iconos-tech"></i>
+              <i class="devicon-insomnia-plain iconos-tech"></i>
+              <i class="devicon-git-plain iconos-tech"></i>
+              <i class="devicon-github-original iconos-tech"></i>
+              <i class="devicon-figma-plain iconos-tech"></i>
             </div>
           </div>
         </div>
@@ -414,3 +432,5 @@
     <script src="./index.js"></script>
   </body>
 </html>
+
+<!-- https://devicon.dev/ -->

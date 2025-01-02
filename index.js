@@ -80,3 +80,15 @@ contenidoBanner.classList.toggle("dark-mode")
 titulos.classList.toggle("dark-mode")
 })
 
+//formulario de contacto
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Evitar el envío predeterminado del formulario
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const tema = document.getElementById('tema').value;
+    const mensaje = document.getElementById('mensaje').value;
+    // Redirigir con mailto:
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=juanarangozapata35@gmail.com&su=${encodeURIComponent(tema)}&body=Nombre: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0A%0AMensaje:%0A${encodeURIComponent(mensaje)}`;
+    window.open(gmailLink, '_blank');
+})
